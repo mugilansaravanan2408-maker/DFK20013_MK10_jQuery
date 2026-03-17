@@ -1,21 +1,19 @@
-$(document).ready(function(){
+$(document).ready(function () {
 
-$("#loginForm").submit(function(e){
+    $("#loginForm").submit(function (e) {
 
-e.preventDefault();
+        e.preventDefault();
 
-var username = $("#username").val();
-var password = $("#password").val();
+        var username = $("#username").val();
+        var password = $("#password").val();
 
-if(username == "" || password == "")
-{
-$("#popupMsg").popup("open");
-}
-else
-{
-$.mobile.changePage("#infoPage");
-}
+        if (username == "" || password == "") {
+            $("#popupMsg").popup("open");
+        }
+        else {
+            $.mobile.changePage("#infoPage");
+        }
 
-});
+    });
 
 });

@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>Login Page</title>
+    <title>Login Page</title>
 
 
-<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
 
-<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </head>
 
@@ -18,76 +19,77 @@
 
 
 
-<div data-role="page" id="loginPage">
+    <div data-role="page" id="loginPage">
 
-   
-    <div data-role="header">
-        <h1>Login System</h1>
-    </div>
-
-   
-    <div data-role="main" class="ui-content">
-
-        <form id="loginForm">
-
-            <label for="username">Username</label>
-            <input type="text" id="username">
-
-            <label for="password">Password</label>
-            <input type="password" id="password">
-
-            <button type="submit">Login</button>
-
-        </form>
-
-    </div>
-
-   
-    <div data-role="footer">
-        <h4>DFK20013 jQuery Mobile</h4>
-    </div>
-
-
-   
-    <div data-role="popup" id="popupMsg">
 
         <div data-role="header">
-            <h1>Warning</h1>
+            <h1>Login System</h1>
+        </div>
+
+
+        <div data-role="main" class="ui-content">
+
+            <form id="loginForm">
+
+                <label for="username">Username</label>
+                <input type="text" id="username">
+
+                <label for="password">Password</label>
+                <input type="password" id="password">
+
+                <button type="submit">Login</button>
+
+            </form>
+
+        </div>
+
+
+        <div data-role="footer">
+            <h4>DFK20013 jQuery Mobile</h4>
+        </div>
+
+
+
+        <div data-role="popup" id="popupMsg">
+
+            <div data-role="header">
+                <h1>Warning</h1>
+            </div>
+
+            <div data-role="main" class="ui-content">
+                <p>Sila isi username & password</p>
+                <a href="#" data-rel="back" class="ui-btn">OK</a>
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+
+    <div data-role="page" id="infoPage">
+
+        <div data-role="header">
+            <h1>Welcome</h1>
         </div>
 
         <div data-role="main" class="ui-content">
-            <p>Sila isi username & password</p>
-            <a href="#" data-rel="back" class="ui-btn">OK</a>
+
+            <h2>Login Successful</h2>
+            <p>You have successfully logged in.</p>
+
+            <a href="#loginPage" class="ui-btn">Logout</a>
+
+        </div>
+
+        <div data-role="footer">
+            <h4>User Information Page</h4>
         </div>
 
     </div>
 
-</div>
-
-
-
-
-<div data-role="page" id="infoPage">
-
-    <div data-role="header">
-        <h1>Welcome</h1>
-    </div>
-
-    <div data-role="main" class="ui-content">
-
-        <h2>Login Successful</h2>
-        <p>You have successfully logged in.</p>
-
-        <a href="#loginPage" class="ui-btn">Logout</a>
-
-    </div>
-
-    <div data-role="footer">
-        <h4>User Information Page</h4>
-    </div>
-
-</div>
-
 
 </body>
+
 </html>
